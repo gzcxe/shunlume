@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>发现</title>
+    <link href="fonts/iconfont.css" tppabs="http://www.suishou.com/suishou/fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/bass.css" tppabs="http://www.suishou.com/suishou/css/bass.css" rel="stylesheet"/>
+    <link href="css/index.css" tppabs="http://www.suishou.com/suishou/css/index.css" rel="stylesheet"/>
+	</head>
+<body>
+	
+	<!--头部-->
+	
+	<header>
+		<div class="header">
+			<h1 >发现</h1>
+		</div>		
+	</header>
+	
+	
+	<!--底部导航栏-->
+		<nav class="nav-bar nav-bar-tab">
+            <a href="index.html" tppabs="http://www.suishou.com/suishou/index.html" class="nav-tab-item">
+                <span class="nav-icon icon-uniE90A"></span>
+                <span class="nav-tab-label">首页</span>
+            </a>
+            <a href="find.html" tppabs="http://www.suishou.com/suishou/contact.html" class="nav-tab-item nav-active">
+                <span class="nav-icon icon-uniE919"></span>
+                <span class="nav-tab-label">发现</span>
+            </a>
+            <a href="placeorder.html" tppabs="http://www.suishou.com/suishou/chatrecord.html" class="nav-tab-item">
+                <span class="nav-icon icon-uniE903">
+                	<!--<span class="nav-badge">1</span>-->
+                </span>
+                <span class="nav-tab-label">发单</span>
+            </a>
+             <a href="userPu.html" tppabs="http://www.suishou.com/suishou/userPu.html" class="nav-tab-item">
+                <span class="nav-icon icon-uniE90B"></span>
+                <span class="nav-tab-label">我的</span>
+            </a>
+        </nav>
+		<!--底部导航栏end-->
+	<!-- 圈子 circle-->
+	<div class="circle">
+		<!-- circle-tab -->
+		
+			<div class="map";><img src="images/map.jpg" height="440px" tppabs="http://www.17sucai.com/preview/177065/2016-06-15/Mzu/images/map.jpg"></div>
+					
+	<!--百度地图容器-->
+    <!--<div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <p style="color:red;font-weight:600">地图生成工具基于百度地图JS api v2.0版本开发，使用请申请密匙。
+      <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank">了解如何申请密匙</a>
+      <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank">申请密匙</a>
+    </p>
+	</div>
+	<script type="text/javascript">-->
+    <!--//创建和初始化地图函数：-->
+    <!--function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(113.574122,23.309787),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"广州商学院",imageOffset: {width:0,height:3},position:{lat:23.309455,lng:113.575631}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>-->
+  <!--百度地图容器end-->
+  
+	<!--<a href="circlePublish.html" tppabs="http://www.17sucai.com/preview/177065/2016-06-15/Mzu/circlePublish.html" class="comment-btn">
+        <i class="icon-uniE93E"></i>
+        发圈子
+      </a>-->
+	<!-- 引入js资源 -->
+	<script type="text/javascript" src="js/zepto.min.js" tppabs="http://www.17sucai.com/preview/177065/2016-06-15/Mzu/js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	  	$(".like-i").click(function(){
+		    $(".like-i").addClass("like-i-active");
+	  	});
+	});
+	</script>
+</body>
+</html>
